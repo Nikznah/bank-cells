@@ -4,7 +4,7 @@ import java.util.UUID;
 
 public class Bank {
 
-    private final HashMap cells = new HashMap();
+    private final Map<UUID, Cell> cells = new HashMap();
 
     public UUID createCell() {
         return createCell(UUID.randomUUID());
